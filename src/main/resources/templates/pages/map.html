@@ -7,12 +7,6 @@
     <h1 class="h1 py-2"> Map </h1>
 
     <div style="height: 500px;" id="map"></div>
-
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-            crossorigin=""></script>
-
     <script th:inline="javascript">
         const map = L.map('map').setView([-18.978318, 47.532783], 12);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

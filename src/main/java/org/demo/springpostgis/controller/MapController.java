@@ -9,4 +9,9 @@ public class MapController {
     public String map() {
         return "pages/map";
     }
+
+    @GetMapping("/heatmap")
+    public String heatmap() {
+        return "pages/heatmap";
+    }
 }

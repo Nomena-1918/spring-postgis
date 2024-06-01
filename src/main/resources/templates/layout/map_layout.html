@@ -19,6 +19,12 @@
 <!-- -->
 
 <!-- BODY-->
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin="">
+</script>
+
     <main style="flex-grow: 1;" class="container d-flex flex-column align-items-center py-2 m-2">
         <div layout:fragment="content"></div>
     </main>
@@ -27,10 +33,5 @@
 <!-- FOOTER -->
     <div th:replace="fragments/footer :: footer"></div>
 <!-- -->
-<!-- Make sure you put this AFTER Leaflet's CSS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossorigin=""></script>
-
 </body>
 </html>
